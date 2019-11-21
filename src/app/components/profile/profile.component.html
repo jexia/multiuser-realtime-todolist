@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Edit Profile</h1>
+<div mat-dialog-content>
+    <form id="form-container" [formGroup]="form">
+        <mat-form-field class="example-full-width">
+            <input matInput type="text" formControlName="first_name" placeholder="First Name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput type="text" formControlName="last_name" placeholder="Last Name">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" [disabled]="form.invalid">Cancel</button>
+    <button mat-button (click)="setProfile()" [disabled]="form.invalid">Save</button>
+</div>

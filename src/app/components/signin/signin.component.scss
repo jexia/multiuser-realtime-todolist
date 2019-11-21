@@ -1,0 +1,27 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    flex-direction: column;
+    > div#form-container {
+        h1 {
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 300px;
+
+        div#button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            button{
+                width: 125px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    > div#form-container {
+        h1 {
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 300px;
+
+        button{
+            width: 50%;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+    }
+}

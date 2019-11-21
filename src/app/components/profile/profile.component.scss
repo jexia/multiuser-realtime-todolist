@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    form#form-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        // width: 100%;
+        h1 {
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        // width: 300px;
+    
+        button{
+            // width: 50%;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+    }
+}

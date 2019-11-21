@@ -1,0 +1,13 @@
+<div id="form-container" [formGroup]="form">
+    <h1>Sign-in</h1>
+    <mat-form-field class="example-full-width">
+        <input matInput type="email" formControlName="email" placeholder="Email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <input matInput type="password" formControlName="password" placeholder="Password">
+    </mat-form-field>
+    <div id="button-container">
+        <button mat-raised-button [disabled]="!form.valid" (click)="authenticate()" color="primary" type="button">Login Now</button>
+        <button mat-raised-button routerLink="/signup" color="secondary" type="button">Sign Up</button>
+    </div>
+</div>

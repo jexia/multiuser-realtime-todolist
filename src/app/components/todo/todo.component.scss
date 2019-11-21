@@ -1,0 +1,172 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    div#todos-container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-content: center;
+        height: calc(100% - 56px);
+        // padding: 40px;
+        overflow-y: scroll;
+
+        > #todo-list {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 40px;
+
+            > div.list {
+                h3.past {
+                    color: red;
+                }
+            }
+
+            > div.list > div.drop-zone{
+                // border: 1px dashed red;
+                background-color: white;
+                min-height: 100px;
+                transition: height 250ms cubic-bezier(0.23, 1, 0.320, 1);
+
+                > div.todo-container {
+                    display: flex;
+
+                    @-webkit-keyframes yellow-fade {   
+                        0% {background: yellow;}
+                        100% {background: none;}
+                     }
+                     
+                     @keyframes yellow-fade {
+                        0% {background: yellow;}
+                        100% {background: none;}
+                     }
+                     
+                    &.highlight {
+                        -webkit-animation: yellow-fade 2s ease-in 1;
+                        animation: yellow-fade 2s ease-in 1;
+                    }
+
+                    &.completed {
+                        text-decoration: line-through;
+                        color: gray;
+                    }
+
+                    button.drag {
+                        cursor: grab;
+                    }
+
+                    > div.todo-detail {
+                        display: flex;
+                        align-items: center;
+                        flex: 1 1 auto;
+                        padding: 0 12px;
+
+                        .what {
+                            flex: 1;
+                        }
+
+                        .who {
+                            flex: 0.5;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            mat-icon {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+
+                >div.no-items {
+                    height: 100px;
+                    background-color: #cacaca;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .example-custom-placeholder {
+                background: #ccc;
+                border: dotted 3px #999;
+                min-height: 60px;
+                transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+
+        div#no-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    mat-card#todo-form {
+        display: flex;
+        flex-direction: row;
+        > div {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        // flex: 1;
+        border-radius: 0px;
+        position: sticky;
+        bottom: 0;
+        margin: 0;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+        mat-form-field {
+            flex: 0.45;
+
+        }
+        @media screen and (min-width: 550px) {
+            > div {
+                flex-direction: row;
+
+                justify-content: space-evenly;
+
+            }
+
+        }
+
+        mat-input {
+            flex: 1;
+            border-radius: 0;
+            height: 50px;
+        }
+
+        button {
+            // border-radius: 0;
+        }
+    }
+
+    .cdk-drag-preview {
+        box-sizing: border-box;
+        border-radius: 20px;
+        
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    }
+    .cdk-drag-animating {
+        transition: transform 450ms cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+        transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+        border: 2px solid red;
+    }
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+}
