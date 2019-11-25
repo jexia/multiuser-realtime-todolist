@@ -13,22 +13,13 @@ Multi user real-time Todo list is an Jexia's Real Time Communication application
 ### Dependencies
 | Name| Description | |
 |--|--|:--:| 
-|[@angular/animations]|Angular - animations integration with web-animations|🎨
 |[@angular/cdk]|Angular Material Component Development Kit|🎨
-|[@angular/common]|Angular - commonly needed directives and services|🛠️
-|[@angular/compiler]|Angular - the compiler library|🛠️
-|[@angular/core]|Angular - the core framework|🛠️
-|[@angular/forms]|Angular - directives and services for creating forms|🛠️
 |[@angular/material]|Angular Material|🎨
-|[@angular/platform-browser]|Angular - library for using Angular in a web browser|🌐
-|[@angular/platform-browser-dynamic]|Angular - library for using Angular in a web browser with JIT compilation|🌐
-|[@angular/router]|Angular - the routing library|🚦
 |[@fortawesome/angular-fontawesome]|The iconic font, CSS, and SVG framework|🎨
 |[@fortawesome/fontawesome-svg-core]|Angular Fontawesome, an Angular library|🎨
 |[@fortawesome/free-solid-svg-icons]|The iconic font, CSS, and SVG framework|🎨
 |[bootstrap]|The most popular front-end framework for developing responsive, mobile first projects on the web.|📱
 |[hammerjs]|A javascript library for multi-touch gestures|📚
-|[http-server]|A simple zero-configuration command-line http server|🌐
 |[jexia-sdk-js]|Awesome Jexia Javascript SDK|🐝
 |[jquery]|JavaScript library for DOM operations|📚
 |[lodash-es]|Lodash exported as ES modules.|🛠️
@@ -38,34 +29,12 @@ Multi user real-time Todo list is an Jexia's Real Time Communication application
 |[node-fetch]|A light-weight module that brings window.fetch to node.js|🛠️
 |[popper.js]|A kickass library to manage your poppers|🛠️
 |[process]|process information for node.js and browsers|🛠️
-|[rxjs]|Reactive Extensions for modern JavaScript|🛠️
-|[tslib]|Runtime library for TypeScript helper functions|🛠️
 |[ws]|Simple to use, blazing fast and thoroughly tested websocket client and server for Node.js|🛠️
-|[zone.js]|Zones for JavaScript|🛠️
 
 ### Development Dependencies
 | Name| Description | |
 |--|--|:--:| 
-|[@angular-devkit/build-angular]|Angular Webpack Build Facade|🛠️
-|[@angular/cli]|CLI tool for Angular|🛠️
-|[@angular/compiler-cli]|Angular - the compiler CLI for Node.js|🛠️
-|[@angular/language-service]|Angular - language services|🛠️
-|[@types/jasmine]|TypeScript definitions for Jasmine|📚
-|[@types/jasminewd2]|TypeScript definitions for jasminewd2|📚
 |[@types/lodash-es]|TypeScript definitions for lodash-es|📚
-|[@types/node]|TypeScript definitions for Node.js|📚
-|[codelyzer]|Linting for Angular applications, following angular.io/styleguide.|🛠️
-|[jasmine-core]|Official packaging of Jasmine's core files for use by Node.js projects.|📚
-|[jasmine-spec-reporter]|Spec reporter for jasmine behavior-driven development framework|🛠️
-|[karma]|Spectacular Test Runner for JavaScript.|🛠️
-|[karma-chrome-launcher]|A Karma plugin. Launcher for Chrome and Chrome Canary.|🌐
-|[karma-coverage-istanbul-reporter]|A karma reporter that uses the latest istanbul 1.x APIs (with full sourcemap support) to report coverage.|🛠️
-|[karma-jasmine]|A Karma plugin - adapter for Jasmine testing framework.|🛠️
-|[karma-jasmine-html-reporter]|A karma reporter that uses the latest istanbul 1.x APIs (with full sourcemap support) to report coverage.|🛠️
-|[protractor]|Webdriver E2E test wrapper for Angular.|🛠️
-|[ts-node]|TypeScript execution environment and REPL for node.js, with source map support|📚
-|[tslint]|An extensible static analysis linter for the TypeScript language|🛠️
-|[typescript]|TypeScript is a language for application scale JavaScript development|📚
 
 
 ## Installation & Setup
