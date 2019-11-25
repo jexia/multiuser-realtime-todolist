@@ -100,8 +100,8 @@ npm install
 4. Create RTC channel named [todo]
 5. Create API-key
 6. Create CRUD policy for all users and all datasets
-7. Update [/multiuser-realtime-todolist/src/environments/environment.prod.ts] with your project-id , API-key, API-secret:
-	export const environment = {
+7. Update [/multiuser-realtime-todolist/src/environments/environment.prod.ts] with your project-id, API-key and API-secret:
+export const environment = {
     production: true,
       jexia: {
         projectID: 'your-project-id',
