@@ -29,7 +29,7 @@
     "http-server": "^0.12.1",
     "jexia-sdk-js": "^4.2.3",
     "jquery": "^3.5.0",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "moment": "^2.24.0",
     "ngx-moment": "^3.5.0",
     "ngx-socket-io": "^3.0.1",
