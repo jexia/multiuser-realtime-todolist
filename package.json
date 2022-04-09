@@ -30,7 +30,7 @@
     "jexia-sdk-js": "^4.2.3",
     "jquery": "^3.5.0",
     "lodash-es": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ngx-moment": "^3.5.0",
     "ngx-socket-io": "^3.0.1",
     "node-fetch": "^2.6.1",
